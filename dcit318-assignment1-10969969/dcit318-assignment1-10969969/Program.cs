@@ -55,10 +55,12 @@ namespace dcit318_assignment1_10969969
             if(age >= 60 || age <= 12)
             {
                 Console.WriteLine("Your ticket price is GHC 7.00");
+                Console.WriteLine("Thanks for purchasing a ticket for yourself.");
             }
             else
             {
                 Console.WriteLine("Your ticket price is GHC 10.00");
+                Console.WriteLine("Thanks for purchasing a ticket for yourself.");
             }
         }
     }
