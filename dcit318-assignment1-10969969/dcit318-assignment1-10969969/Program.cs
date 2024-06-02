@@ -10,7 +10,8 @@ namespace dcit318_assignment1_10969969
     {
         static void Main(string[] args)
         {
-            GradeDetector();
+            // GradeDetector();
+            TicketPriceCalc();
            
         }
         static void GradeDetector()
@@ -41,6 +42,23 @@ namespace dcit318_assignment1_10969969
             else
             {
                 Console.WriteLine("Grade F");
+            }
+        }
+        static void TicketPriceCalc()
+        {
+            Console.WriteLine("Welcome Bro");
+            Console.WriteLine();
+            Console.WriteLine("Please enter your age to get your ticket price");
+
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            if(age >= 60 || age <= 12)
+            {
+                Console.WriteLine("Your ticket price is GHC 7.00");
+            }
+            else
+            {
+                Console.WriteLine("Your ticket price is GHC 10.00");
             }
         }
     }
