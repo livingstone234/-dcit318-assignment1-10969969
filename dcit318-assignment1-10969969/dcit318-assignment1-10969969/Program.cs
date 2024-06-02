@@ -11,7 +11,9 @@ namespace dcit318_assignment1_10969969
         static void Main(string[] args)
         {
             // GradeDetector();
-            TicketPriceCalc();
+            // TicketPriceCalc();
+            TriangleTypeIdentifier();
+
            
         }
         static void GradeDetector()
@@ -61,6 +63,29 @@ namespace dcit318_assignment1_10969969
             {
                 Console.WriteLine("Your ticket price is GHC 10.00");
                 Console.WriteLine("Thanks for purchasing a ticket for yourself.");
+            }
+        }
+        static void TriangleTypeIdentifier()
+        {
+            Console.WriteLine("Welcome Bro");
+            Console.WriteLine();
+            Console.WriteLine("Please enter the length of the sides of the triangle");
+
+            int side1 = Convert.ToInt32(Console.ReadLine());
+            int side2 = Convert.ToInt32(Console.ReadLine());
+            int side3 = Convert.ToInt32(Console.ReadLine());
+
+            if(side1 == side2 && side2 == side3)
+            {
+                Console.WriteLine("An Equilateral Triangle");
+            }
+            else if(side1 == side2 || side2 == side3 || side1 == side3) 
+            {
+                Console.WriteLine("An Isosceles Triangle");
+            }
+            else
+            {
+                Console.WriteLine("A Scalene Triangle");
             }
         }
     }
